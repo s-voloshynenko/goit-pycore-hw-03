@@ -42,11 +42,26 @@ def get_upcoming_birthdays(users: list[dict[str, str]]) -> list[dict[str, str]]:
 
 # users list was checked againts 8th of Jul
 users = [
-    {"name": "John Doe", "birthday": "1985.01.23"}, # will put the next year but won't be add into the list
-    {"name": "Robin Sanchez", "birthday": "1993.09.24"}, # will be this year but not in 7 days range so won't be added
-    {"name": "Kristof Anaken", "birthday": "1994.07.10"}, # will be added to the list
-    {"name": "Alice Wood", "birthday": "1994.07.13"}, # will be added to the list but due to Saturday will be moved to the next Mon
-    {"name": "Mike Milo", "birthday": "1994.07.14"} # will be added to the list but due to Sunday will be moved to the next Mon
+    {
+        "name": "John Doe",
+        "birthday": "1985.01.23"
+    }, # will put the next year but won't be add into the list
+    {
+        "name": "Robin Sanchez",
+        "birthday": "1993.09.24"
+    }, # will be this year but not in 7 days range so won't be added
+    {
+        "name": "Kristof Anaken",
+        "birthday": "1994.07.10"
+    }, # will be added to the list
+    {
+        "name": "Alice Wood",
+        "birthday": "1994.07.13"
+    }, # will be added to the list but due to Saturday will be moved to the next Mon
+    {
+        "name": "Mike Milo",
+        "birthday": "1994.07.14"
+    } # will be added to the list but due to Sunday will be moved to the next Mon
 ]
 
 result = get_upcoming_birthdays(users)

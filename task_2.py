@@ -28,8 +28,12 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list[int] | list:
     return sorted(unique_numbers)
 
 lottery_numbers = get_numbers_ticket(1, 49, 6)
-lottery_numbers_uniqueness_check = get_numbers_ticket(1, 1000, 1000) # fills 1000 sorted items from 1 to 1000
-lottery_numbers_with_wrong_argument = get_numbers_ticket(0, 49, 6) # returns empty list because of incorrect min argument
+lottery_numbers_uniqueness_check = get_numbers_ticket(
+    1, 1000, 1000
+) # fills 1000 sorted items from 1 to 1000
+lottery_numbers_with_wrong_argument = get_numbers_ticket(
+    0, 49, 6
+) # returns empty list because of incorrect min argument
 
 print("Your numbers:", lottery_numbers)
 print("Uniqueness check:", lottery_numbers_uniqueness_check)

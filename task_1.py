@@ -8,7 +8,8 @@ def get_days_from_today(date: str) -> int:
         date (str): The target date in the format 'YYYY-MM-DD'.
 
     Returns:
-        int: The number of days between the given and the current dates. Returns a negative number if the given date is later than the current.
+        int: The number of days between the given and the current dates.
+        Returns a negative number if the given date is later than the current.
 
     Raises:
         ValueError: If the input date format is incorrect.
@@ -27,4 +28,3 @@ result_with_later_date = get_days_from_today("2025-10-09") # returns negative nu
 print(result, result_with_later_date)
 
 get_days_from_today("2020-111-111") # handles exception and prints error details
-
